@@ -18,3 +18,7 @@ use our Makefile:
     [APP]time="2017-10-26T14:37:15Z" level=info msg="support listener on :9911"
     [APP]time="2017-10-26T14:37:15Z" level=info msg="proxy listener on :9090"
     [APP]time="2017-10-26T14:37:15Z" level=info msg="certPathTLS or keyPathTLS not found, defaulting to HTTP"
+
+## Run skipper with tracing support
+
+    % docker run registry.opensource.zalan.do/teapot/skipper-tracing:latest

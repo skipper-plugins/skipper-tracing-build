@@ -2,7 +2,8 @@
 
 NAME     ?= skipper-tracing
 VERSION  ?= $(shell git describe --tags --always --dirty)
-REGISTRY ?= pierone.stups.zalan.do/teapot
+# use registry.opensource.zalan.do/teapot/skipper-tracing:latest to pull
+REGISTRY ?= registry-write.opensource.zalan.do/teapot
 IMAGE    ?= $(REGISTRY)/$(NAME):$(VERSION)
 GOPATH   = $(shell pwd)/build
 
