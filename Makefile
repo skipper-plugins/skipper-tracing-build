@@ -1,7 +1,7 @@
 .PHONY: docker-push
 
 NAME     ?= skipper-tracing
-VERSION  ?= $(shell git rev-parse HEAD)
+VERSION  ?= $(shell git describe --tags --always --dirty)
 REGISTRY ?= pierone.stups.zalan.do/teapot
 IMAGE    ?= $(REGISTRY)/$(NAME):$(VERSION)
 GOPATH   = $(shell pwd)/build
